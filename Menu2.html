@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Venta.css">
+    <title>Tipos de Cappuccino</title>
+</head>
+<header>
+    <a href="Index.html"><button>Inicio</button></a>
+</header>
+<body>
+    <h1>Tipos de Cappuccino</h1>
+    <div class="coffee-section">
+        <div class="coffee-card">
+            <img src="media/DreamShaper_v7_cappuccino_0.jpg" alt="Latte Clásico" width="280" height="180">
+            <h3>Cappuccino Clasico</h3>
+            <p>Un Cappuccino suave y cremoso.</p>
+            <p>Precio: $3.99</p>
+            <button onclick="personalizarLatte('Latte Clásico')">Personalizar</button>
+        </div>
+        <div class="coffee-card">
+            <img src="media/DreamShaper_v7_cappuccino_2.jpg" alt="Latte Vainilla" width="280" height="180">
+            <h3>Cappuccino Mixto</h3>
+            <p>Cappuccino con un toque variado.</p>
+            <p>Precio: $4.29</p>
+            <button onclick="personalizarLatte('Latte de Vainilla')">Personalizar</button>
+        </div>
+        <div class="coffee-card">
+            <img src="media/DreamShaper_v7_cappuccino_3.jpg" alt="Latte Vainilla" width="280" height="180">
+            <h3>Cappuccino Vainilla</h3>
+            <p>Cappuccino con un toque de vainilla.</p>
+            <p>Precio: $6.29</p>
+            <button onclick="personalizarLatte('Latte de Vainilla')">Personalizar</button>
+        </div>
+    </div>
+
+    <div id="personalizar-latte" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('personalizar-latte')">&times;</span>
+            <h3>Personaliza tu Latte</h3>
+            <h4 id="latte-nombre">Latte Clásico</h4>
+            <label for="tipo-leche">Selecciona el tipo de leche:</label>
+            <select id="tipo-leche">
+                <option value="leche-entera">Leche Entera</option>
+                <option value="leche-descremada">Leche Descremada</option>
+                <option value="leche-de-almendras">Leche de Almendras</option>
+            </select>
+            <label for="tipo-azucar">Selecciona el tipo de azúcar:</label>
+            <select id="tipo-azucar">
+                <option value="azucar-blanco">Azúcar Blanco</option>
+                <option value="azucar-moreno">Azúcar Moreno</option>
+                <option value="sin-azucar">Sin Azúcar</option>
+            </select>
+            <label for="temperatura">Selecciona la temperatura:</label>
+            <input type="radio" id="frio" name="temperatura" value="frio">
+            <label for="frio">Frío</label>
+            <input type="radio" id="caliente" name="temperatura" value="caliente">
+            <label for="caliente">Caliente</label>
+            <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+    </div>
+    <script src="Venta.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Option.css">
+    <title>Menú de Café</title>
+</head>
+<header>
+    <nav class="menu">
+        <h1>Seleccione el cafe de su gusto</h1>
+        <a href="index.html">Inicio</a>
+    </nav>
+</header>
+<body>
+    <div class="menu-container">
+        <div class="card">
+            <a href="#" target="_blank">
+                <img src="media/DreamShaper_v7_premium_coffee_0.jpg" alt="Café 1" width="280" height="180">
+            </a>
+            <h3>Café Premium</h3>
+            <p>Una selección exclusiva de granos de café de alta calidad.</p>
+            <button onclick="openModal('modal1')">Detalles</button>
+        </div>
+
+        <div class="card">
+            <a href="#" target="_blank">
+                <img src="media/DreamShaper_v7_organic_coffee_0.jpg" alt="Café 2" width="280" height="180">
+            </a>
+            <h3>Café Orgánico</h3>
+            <p>Disfruta de café cultivado de manera sostenible y respetuosa con el medio ambiente.</p>
+            <button onclick="openModal('modal2')">Detalles</button>
+        </div>
+
+        <div class="card">
+            <a href="#" target="_blank">
+                <img src="media/DreamShaper_v7_Especial_coffee_0.jpg" alt="Café 3" width="280" height="180">
+            </a>
+            <h3>Café Especial</h3>
+            <p>Un café con un sabor único y notas exquisitas que te sorprenderán.</p>
+            <button onclick="openModal('modal3')">Detalles</button>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <img src="media/cafe1.jpg" alt="Café Premium">
+                <h3>Café Premium</h3>
+                <p>Descubre nuestro café Premium, una selección exclusiva de granos de café de alta calidad. El sabor suave y delicado te cautivará. Ideal para aquellos que aprecian la excelencia en cada taza.</p>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <img src="media/cafe2.jpg" alt="Café Orgánico">
+                <h3>Café Orgánico</h3>
+                <p>Nuestro café Orgánico es cultivado de manera sostenible y respetuosa con el medio ambiente. Cada taza es una experiencia consciente y deliciosa. Únete a la revolución del café sostenible.</p>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <img src="media/cafe3.jpg" alt="Café Especial">
+                <h3>Café Especial</h3>
+                <p>Nuestro Café Especial es un viaje sensorial. Con notas únicas y un sabor excepcional, este café es para aquellos que buscan una experiencia verdaderamente especial. ¡Déjate llevar por su magia!</p>
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
